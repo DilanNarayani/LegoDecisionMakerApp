@@ -6,6 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<h1>LEGO Set Generator</h1>
+		<p>Enter your information below to calculate your dream LEGO set.</p>
+	</header>
+
+	<center>
+    <label>Money:</label>
+    <input type="text" id="money"><br><br>
+
+    <label>Job: </label>
+    <select id="job">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <br><br>
+
+    <label>Kidney:</label>
+    <input type="text" id="kidney"><br><br>
+
+    <button onclick="getTicket()">Find My Lego Set!</button>
+
+    <div class="outputBox">
+        <h2>Dream Lego Set:</h2>
+  	    <img width="100%" id="legoImage">
+	    <p id="output"> </p>
+	</div>
+
+  </center>
+    <script src="script.js"></script>
+  </body>
+</html>
 </body>
 </html>
