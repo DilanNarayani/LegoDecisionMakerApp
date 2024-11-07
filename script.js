@@ -32,6 +32,6 @@ function getTicket(){
   
     //Lastly, set the results to display on the screen. Here is an example, although this will just set the results to be an empty string (you'll need to edit what it equals).
     document.getElementById("legoImage").src = legoImage;
-    document.getElementById("output").innerHTML = price;
+    document.getElementById("output").innerHTML = "$" +price;
     
   }
