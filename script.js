@@ -42,7 +42,7 @@ function getTicket(){
 
     else if (moneyImput >= 1000){
         legoImage = "https://www.werd.com/wp-content/uploads/2017/09/Ultimate-Collector-Series-Millennium-Falcon.jpg"
-        price = 1000
+        price = "$" + 1000
     }
 
     
@@ -108,4 +108,3 @@ function getTicket(){
     document.getElementById("output").innerHTML = price;
     
   }
-
