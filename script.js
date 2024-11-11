@@ -51,16 +51,24 @@ function getTicket(){
 
 
     // Job
-    else if (moneyImput <= 10 && jobImput == "no" && (kidneyImput == 1)){
+    else if (moneyImput <= 24 && jobImput == "no" && (kidneyImput == 1)){
         legoImage = "https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/08/1140-new-job-keyboard.jpg"
         price = "Good luck searching!"
     }
-    else if (moneyImput <= 10 && jobImput == "no" && (kidneyImput == 2)){
+    else if (moneyImput <= 24 && jobImput == "no" && (kidneyImput == 2)){
         legoImage = "https://gizmodo.com/app/uploads/2017/10/okxigt7ow5d9f1uqbdng.jpg"
         price = "Sell that kidney! Buy a Lego Set!"
     }
 
-
+    else if (moneyImput <= 24 && jobImput == "yes" && (kidneyImput == 1)){
+        legoImage = "https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/08/1140-new-job-keyboard.jpg"
+        price = "Find a new job!"
+    }
+    else if (moneyImput <= 24 && jobImput == "yes" && (kidneyImput == 2)){
+         legoImage = "https://gizmodo.com/app/uploads/2017/10/okxigt7ow5d9f1uqbdng.jpg"
+        price = "Sell that kidney! Buy a Lego Set!"
+    }
+    
 
 
 
