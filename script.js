@@ -10,7 +10,8 @@ function getTicket(){
     console.log(moneyImput);
     var price
 
-// Kidneys
+    // Kidneys
+    // if the amount of kidneys entered is above or under the expected number of kidneys it will print the corisponding message
     if (kidneyImput > 2){
         legoImage = "https://www.shutterstock.com/image-vector/red-rubber-lies-lie-liar-260nw-2332672717.jpg"
         price = "Liar. Try again!";
@@ -23,6 +24,8 @@ function getTicket(){
 
 
     // Money 
+
+    // Next it checks for what is entered into money if any of these are true this is the next highest thing with priority
     else if (moneyImput >= 400 && moneyImput <= 999){
         legoImage = "https://www.lego.com/cdn/cs/set/assets/blt519dac201a3dd4c1/42172.png?format=webply&fit=bounds&quality=60&width=1200&height=1200&dpr=2"
         price = "$" + 400
@@ -51,19 +54,23 @@ function getTicket(){
 
 
     // Job
+
+    // if you don't have a job, only one kidney and less than 25 dollars 
     else if (moneyImput <= 24 && jobImput == "no" && (kidneyImput == 1)){
         legoImage = "https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/08/1140-new-job-keyboard.jpg"
         price = "Good luck searching!"
     }
+    // if you don't have a job and less than 25 dollars but two kidneys
     else if (moneyImput <= 24 && jobImput == "no" && (kidneyImput == 2)){
         legoImage = "https://gizmodo.com/app/uploads/2017/10/okxigt7ow5d9f1uqbdng.jpg"
         price = "Sell that kidney! Buy a Lego Set!"
     }
-
+    //if you do have a job, but only one kidney and less than 25 dollars 
     else if (moneyImput <= 24 && jobImput == "yes" && (kidneyImput == 1)){
         legoImage = "https://cdn.aarp.net/content/dam/aarp/work/job-search/2020/08/1140-new-job-keyboard.jpg"
         price = "Find a new job!"
     }
+    // if you do have a job, and two kidneys and less than 25 dollars 
     else if (moneyImput <= 24 && jobImput == "yes" && (kidneyImput == 2)){
          legoImage = "https://gizmodo.com/app/uploads/2017/10/okxigt7ow5d9f1uqbdng.jpg"
         price = "Sell that kidney! Buy a Lego Set!"
